@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>워크북 - Beyond the ICF Gallery</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛠️ 나만의 워크북</h1>
+    <nav>
+      <a href="index.html">🏠 홈으로</a>
+      <a href="ebook.html">📖 eBook 다운로드</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>나의 Functioning 기록하기</h2>
+      <form id="workbook-form">
+        <label>오늘의 Functioning 발견:</label><br/>
+        <textarea name="functioning" rows="4" required></textarea><br/><br/>
+
+        <label>오늘 얻은 인사이트:</label><br/>
+        <textarea name="insight" rows="4"></textarea><br/><br/>
+
+        <label>AI에게 물어볼 질문:</label><br/>
+        <textarea name="question" rows="4"></textarea><br/><br/>
+
+        <button type="submit">저장하기</button>
+      </form>
+
+      <div id="result" style="display:none;">
+        <h3>작성 완료 🎉</h3>
+        <p>작성하신 내용이 저장되었습니다.</p>
+        <button onclick="window.print()">PDF로 저장하기 🖨️</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Beyond the ICF Gallery. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
